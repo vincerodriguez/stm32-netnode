@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.1
         }
       },
       "diff_pair_dimensions": [
@@ -195,7 +195,9 @@
       ],
       "track_widths": [
         0.0,
+        0.1898,
         0.254,
+        0.4,
         0.5,
         1.0
       ],
@@ -240,7 +242,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "2.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -488,7 +490,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "STM32F407.kicad_pro",
+    "filename": "stm32-netnode.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -496,9 +498,9 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.2312,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -513,11 +515,38 @@
         "wire_width": 6
       },
       {
-        "diff_pair_gap": 0.2032,
-        "diff_pair_width": 0.2037,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.2312,
         "name": "ETH",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.25,
+        "name": "MDIO",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1898,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
+        "name": "RMII",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": ""
+      },
+      {
+        "diff_pair_gap": 0.12,
+        "diff_pair_width": 0.2861,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       }
@@ -530,11 +559,23 @@
     "netclass_patterns": [
       {
         "netclass": "ETH",
-        "pattern": "*/TD*"
+        "pattern": "*TD*"
       },
       {
         "netclass": "ETH",
-        "pattern": "*/RD*"
+        "pattern": "*RD*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "*USB_*"
+      },
+      {
+        "netclass": "RMII",
+        "pattern": "ETH_*"
+      },
+      {
+        "netclass": "Default",
+        "pattern": ""
       }
     ]
   },
@@ -661,18 +702,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "STM32F407.kicad_sch",
-        "name": "Root",
+        "filename": "stm32-netnode.kicad_sch",
+        "name": "stm32-netnode",
         "uuid": "28e8f3eb-fdb9-4840-b669-19b02024f540"
       }
     ],
-    "used_designators": "C30",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
       "28e8f3eb-fdb9-4840-b669-19b02024f540",
-      "Root"
+      "stm32-netnode"
     ]
   ],
   "text_variables": {},
