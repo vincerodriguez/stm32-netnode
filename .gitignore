@@ -19,3 +19,15 @@ _autosave-*
 Thumbs.db
 Desktop.ini
 
+
+.gitignore
+
+# Build artifacts
+firmware/Debug/*.elf
+firmware/Debug/*.map
+firmware/Debug/*.list
+firmware/Debug/default.size.stdout
+firmware/Debug/**/*.o
+firmware/Debug/**/*.d
+firmware/Debug/**/*.su
+firmware/Debug/**/*.cyclo

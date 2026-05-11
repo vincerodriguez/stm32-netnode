@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:/Users/Vince's PC/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/\" 2>&1)",
+      "Bash(cp -r 'C:/Users/Vince'\\\\''s PC/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src' 'C:/Users/Vince'\\\\''s PC/Downloads/STM32F407/STM32F407/Drivers/STM32F4xx_HAL_Driver/Src')",
+      "Bash(cp -r 'C:/Users/Vince'\\\\''s PC/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Inc' 'C:/Users/Vince'\\\\''s PC/Downloads/STM32F407/STM32F407/Drivers/STM32F4xx_HAL_Driver/Inc')",
+      "Bash(cp -r 'C:/Users/Vince'\\\\''s PC/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/CMSIS/Include' 'C:/Users/Vince'\\\\''s PC/Downloads/STM32F407/STM32F407/Drivers/CMSIS/Include')",
+      "Bash(cp -r 'C:/Users/Vince'\\\\''s PC/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/CMSIS/Device/ST/STM32F4xx/Include' 'C:/Users/Vince'\\\\''s PC/Downloads/STM32F407/STM32F407/Drivers/CMSIS/Device/ST/STM32F4xx/Include')",
+      "Bash(cp -r 'C:/Users/Vince'\\\\''s PC/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Middlewares/Third_Party/LwIP/src' 'C:/Users/Vince'\\\\''s PC/Downloads/STM32F407/STM32F407/Middlewares/Third_Party/LwIP/src')",
+      "Bash(cp -r 'C:/Users/Vince'\\\\''s PC/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Middlewares/Third_Party/LwIP/system' 'C:/Users/Vince'\\\\''s PC/Downloads/STM32F407/STM32F407/Middlewares/Third_Party/LwIP/system')",
+      "Bash(make -j4)",
+      "Bash(arm-none-eabi-gcc --version)",
+      "Bash(python3 -)",
+      "Bash(make clean *)",
+      "Bash(arm-none-eabi-size \"C:/Users/Vince's PC/Downloads/STM32F407/STM32F407/Debug/STM32F407.elf\")",
+      "Bash(make)",
+      "Bash(make all *)"
+    ]
+  }
+}
